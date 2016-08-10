@@ -15,7 +15,9 @@ $(document).ready(function() {
     $(".responses").append("<div class=\"col-md-2\">" + locationInput + "</div>");
     $(".responses").append("<div class=\"col-md-2\">" + foodInput + "</div>");
     $(".responses").append("<div class=\"col-md-2\">" + musicInput + "</div>");
-    $(".responses").append("<div class=\"col-md-2\">" + colorInput + "</div>");
+    $(".responses").append("<div class=\"col-md-2 colordiv\">" + colorInput + "</div>");
+    $(".colordiv").last().css("background-color", colorInput);
+    $(".colordiv").last().css("color", colorInput);
     $(".responses").append("</div>");
     $(".responses").show();
   });
